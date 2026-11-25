@@ -11,6 +11,7 @@ Mods for Bitwig Studio, loaded with [Patchbay](https://github.com/shaboogen-dev/
 | Mod | ID | Built against | Version |
 |---|---|---|---|
 | [Mixer: Layout Abort Recovery](bugfix-layout-abort-recovery/README.md): stops big Mix views freezing when Bitwig gives up on a layout | `bugfix-layout-abort-recovery` | 6.1.7 macOS | 0.1.0-dev.1 |
+| [Devices: Framework Device Insert](framework-device-insert/README.md): devices from Framework: Nitro Devices can be inserted by UUID, not only from the browser | `framework-device-insert` | 6.1.7 macOS | 0.1.0-dev.1 |
 
 ## Install
 
