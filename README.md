@@ -29,6 +29,7 @@ One folder per mod, in Patchbay's source layout (Patchbay `docs/sdk/mods.md`):
 | `<mod-id>/src/` | Java source, compiled into `helper.jar` |
 | `<mod-id>/README.md` | The mod's README, shown on GitHub and in Patchbay |
 | `tools/build_mod.sh` | Builds, installs and packages a mod ([BUILDING.md](BUILDING.md)) |
+| `tools/release.sh` | Tags and publishes a mod's release ([BUILDING.md](BUILDING.md#release)) |
 
 ## License
 

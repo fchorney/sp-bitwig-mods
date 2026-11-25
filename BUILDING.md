@@ -40,3 +40,17 @@ also adds `src/`, `build.json`, `uses.tsv` and `SHA256SUMS.txt`, and zips the fo
 the mod ID at the top.
 
 Restart Patchbay's window (or **Refresh**) after installing, so it prepares the new build.
+
+## Release
+
+Releases are built locally: the build needs Bitwig's own jars, which stay off GitHub.
+
+```sh
+tools/release.sh bugfix-layout-abort-recovery
+```
+
+It needs a clean working tree on `main` and a version in `mod.json` that has no tag yet. It
+builds the release zip, checks its `SHA256SUMS.txt`, tags `<mod-id>-<version>`, pushes to
+`origin` and `nas`, and creates the GitHub release with the zip and
+`SHA256SUMS-<mod-id>-<version>.txt`. A version with a pre-release part (`0.1.0-dev.1`) is
+published as a pre-release.
