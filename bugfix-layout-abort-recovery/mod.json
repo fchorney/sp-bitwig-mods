@@ -2,7 +2,8 @@
   "manifest_version": 2,
   "mod": {
     "id": "bugfix-layout-abort-recovery",
-    "name": "Bugfix: Layout Abort Recovery",
+    "name": "Mixer: Layout Abort Recovery",
+    "area": "Mixer",
     "version": "0.1.0-dev.1",
     "author": "SenPi",
     "description": "When Bitwig aborts a window layout after 1000 passes (big Mix views), put the unfinished layout roots back so the window is laid out and drawn instead of freezing. Logs each retry to Bitwig's log.",

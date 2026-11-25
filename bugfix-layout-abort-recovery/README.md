@@ -1,4 +1,4 @@
-# Bugfix: Layout Abort Recovery
+# Mixer: Layout Abort Recovery
 
 > **Built against**: Bitwig 6.1.7 (macOS, universal)
 >
@@ -17,7 +17,7 @@ drawn again. The window stops updating and looks frozen. Bitwig's log shows
 
 This happens most easily in a big Mix view (around 200 or more mixer strips).
 
-**Bugfix: Layout Abort Recovery** keeps a copy of that list before Bitwig throws it away, and
+**Mixer: Layout Abort Recovery** keeps a copy of that list before Bitwig throws it away, and
 queues the widgets for layout again on the next event, which gives the layout another 1000
 passes. In the case it was written for, one retry is enough and the Mix view opens normally.
 
