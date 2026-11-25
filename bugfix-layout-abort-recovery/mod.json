@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "mod": {
+    "id": "bugfix-layout-abort-recovery",
+    "name": "Bugfix: Layout Abort Recovery",
+    "version": "0.1.0-dev.1",
+    "author": "SenPi",
+    "description": "When Bitwig aborts a window layout after 1000 passes (big Mix views), put the unfinished layout roots back so the window is laid out and drawn instead of freezing. Logs each retry to Bitwig's log.",
+    "documentation": "readme"
+  },
+  "built_against": {
+    "bitwig_version": "6.1.7",
+    "platform": "macos",
+    "architecture": "universal"
+  },
+  "resources": {
+    "readme": {
+      "kind": "file",
+      "path": "README.md",
+      "media_type": "text/markdown"
+    }
+  }
+}
