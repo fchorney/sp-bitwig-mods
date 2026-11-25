@@ -33,3 +33,4 @@ written to Bitwig's log under the mod's name.
 | Date | Bitwig | Patchbay | Result |
 |---|---|---|---|
 | 2026-11-25 | 6.1.7 macOS | BML 0.36.0-dev.17 | A device from Framework: Nitro Devices 1.3.0-dev.3 inserted by UUID from a controller script 16 times in a row, each from the folder file (first lookup scanned 1 folder, 2 files, 2 ms). Before: every insert failed with FileNotFoundException. |
+| 2026-11-25 | 6.1.7 macOS (mod built against 6.1.4, mapped by Patchbay) | BML 0.36.0-dev.17 | 0.1.0-dev.2: two fresh inserts by UUID from a controller script resolved to the folder file; both test bounces nulled bit-exact. |

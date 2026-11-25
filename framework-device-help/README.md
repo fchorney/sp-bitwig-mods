@@ -32,3 +32,10 @@ sym-eq5.input_meter.desc=Level at the device input, before the Input knob
 ## Needs
 
 - Patchbay's Framework: Nitro Devices (`custom-device-registrar`), whose folder list it reads.
+
+## Tested
+
+| Date | Bitwig | Patchbay | Result |
+|---|---|---|---|
+| 2026-11-25 | 6.1.7 macOS | BML 0.36.0-dev.17 | 0.1.0-dev.1 (built against 6.1.7): a framework device's help view shows its `*.help.properties` texts; stock ids on the same device keep Bitwig's texts. |
+| 2026-11-25 | 6.1.7 macOS (mod built against 6.1.4, mapped by Patchbay) | BML 0.36.0-dev.17 | 0.1.0-dev.2: same result. |

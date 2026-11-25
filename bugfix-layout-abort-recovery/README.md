@@ -42,6 +42,7 @@ session, opening a Mix view that froze stock Bitwig 6.1.7 every time:
 | Date | Bitwig | Patchbay | Result |
 |---|---|---|---|
 | 2026-11-25 | 6.1.7 macOS | BML 0.36.0-dev.17 | A Mix view that froze on every open opened and drew. 3 aborts in 30 s, each recovered after one retry (3,095 ms during project load, then 69 ms and 94 ms). The give-up-after-20-rounds path has not been seen. |
+| 2026-11-25 | 6.1.7 macOS (mod built against 6.1.4, mapped by Patchbay) | BML 0.36.0-dev.17 | 0.1.0-dev.2: the same Mix view test project opened without freezing. |
 
 ## Versions
 
