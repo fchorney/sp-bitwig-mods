@@ -4,13 +4,13 @@
     "id": "framework-device-insert",
     "name": "Devices: Framework Device Insert",
     "area": "Devices",
-    "version": "0.1.0-dev.1",
+    "version": "0.1.0-dev.2",
     "author": "SenPi",
     "description": "Devices loaded by Framework: Nitro Devices can be inserted by UUID (controller scripts, presets), not only from the browser: Bitwig's UUID-to-file lookup finds the file in the framework's folders instead of its own Library.",
     "documentation": "readme"
   },
   "built_against": {
-    "bitwig_version": "6.1.7",
+    "bitwig_version": "6.1.4",
     "platform": "macos",
     "architecture": "universal"
   },

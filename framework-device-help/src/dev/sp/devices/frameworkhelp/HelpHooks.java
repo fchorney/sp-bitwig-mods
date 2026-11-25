@@ -1,6 +1,6 @@
 package dev.sp.devices.frameworkhelp;
 
-import bitwig.obf.mjr; // a translation table (one per resource bundle); beI(key, args) returns its text or null
+import bitwig.obf.zgD; // a translation table (one per resource bundle); cfM(key, args) returns its text or null
 import bml.api.Arg;
 import bml.api.At;
 import bml.api.Bml;
@@ -26,7 +26,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Bitwig looks a help text up as mjr.beI(key, args) on its translation tables: null when the table has no such key, and
+ * Bitwig looks a help text up as zgD.cfM(key, args) on its translation tables: null when the table has no such key, and
  * then the caller logs "Localized text for key ... not found" and shows the key itself. This mod wraps that return: for a
  * key no table has, it answers from the *.help.properties files in Framework: Nitro Devices' folders.
  */
@@ -43,8 +43,8 @@ public final class HelpHooks {
     private static String stamp = null;   // the help files' paths, sizes and times at the last load
     private static long checked = 0;      // System.nanoTime() of the last stamp check
 
-    /** mjr.beI(String, Object[]): Bitwig's text for the key, or null. */
-    @Hook(id = "framework-device-help-text", target = mjr.class, method = "beI(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;",
+    /** zgD.cfM(String, Object[]): Bitwig's text for the key, or null. */
+    @Hook(id = "framework-device-help-text", target = zgD.class, method = "cfM(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;",
           at = At.WRAP_RETURN, allReturns = true)
     public static String text(@Return String found, @Arg(0) String key) {
         if (found != null || key == null) return found;

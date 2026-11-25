@@ -8,7 +8,7 @@
 | | |
 |---|---|
 | JDK | 21 or later (`javac --release 21`) |
-| `bitwig.jar`, `libs.jar` | from a Bitwig install of the exact build in the mod's `built_against` (e.g. 6.1.7 macOS: `Bitwig Studio.app/Contents/Java/`) |
+| `bitwig.jar`, `libs.jar` | from a Bitwig install of the exact build in the mod's `built_against` (e.g. 6.1.4 macOS: `Bitwig Studio 6.1.4.app/Contents/Java/`) |
 | Patchbay (BML) install | its `modkit/` (`bml-modkit.jar`, `bml-api.jar`) and `mods/` folders |
 | Patchbay repository clone | releases only: its `tools/mod_uses.py` writes `uses.tsv` |
 | Python 3, `zip` | |

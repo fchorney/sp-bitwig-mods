@@ -1,5 +1,11 @@
 # Devices: Framework Device Help
 
+> **Built against**: Bitwig 6.1.4 (macOS, universal)
+>
+> **Will map to**: every Bitwig build Patchbay's map packs translate macOS 6.1.4 to (offline preparation checked on macOS 6.1.4 and 6.1.7)
+>
+> **Mod ID**: framework-device-help
+
 Devices loaded by Patchbay's **Framework: Nitro Devices** can bring their own help text.
 
 Bitwig's help view (the **?** overlay on a device) shows, for every panel item, the texts stored under the item's help

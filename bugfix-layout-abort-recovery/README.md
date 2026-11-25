@@ -1,8 +1,8 @@
 # Mixer: Layout Abort Recovery
 
-> **Built against**: Bitwig 6.1.7 (macOS, universal)
+> **Built against**: Bitwig 6.1.4 (macOS, universal)
 >
-> **Will map to**: Bitwig 6.1.7 on macOS only, for now (see [Versions](#versions))
+> **Will map to**: every Bitwig build Patchbay's map packs translate macOS 6.1.4 to (offline preparation checked on macOS 6.1.4 and 6.1.7) (see [Versions](#versions))
 >
 > **Mod ID**: bugfix-layout-abort-recovery
 >
@@ -46,6 +46,7 @@ session, opening a Mix view that froze stock Bitwig 6.1.7 every time:
 ## Versions
 
 Bitwig renames its internal classes in every release. Patchbay translates a mod's names to other
-Bitwig versions only from its reference builds (6.1.3 and 6.1.4). This mod is written against
-6.1.7 on macOS, so it loads on that exact build and is shown as not available on any other until
-it is ported.
+Bitwig versions only from its reference builds (6.1.3 and 6.1.4). From 0.1.0-dev.2 this mod is
+written against macOS 6.1.4 (ported from 6.1.7 with Patchbay's SourcePorter), so Patchbay can map it
+to the other builds its map packs cover. Offline preparation passes on macOS 6.1.4 and 6.1.7; other
+builds are untested.

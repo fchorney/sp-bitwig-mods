@@ -1,8 +1,8 @@
 # Devices: Framework Device Insert
 
-> **Built against**: Bitwig 6.1.7 (macOS, universal)
+> **Built against**: Bitwig 6.1.4 (macOS, universal)
 >
-> **Will map to**: Bitwig 6.1.7 on macOS only, for now
+> **Will map to**: every Bitwig build Patchbay's map packs translate macOS 6.1.4 to (offline preparation checked on macOS 6.1.4 and 6.1.7)
 >
 > **Mod ID**: framework-device-insert
 >

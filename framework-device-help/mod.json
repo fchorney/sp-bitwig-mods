@@ -4,13 +4,13 @@
     "id": "framework-device-help",
     "name": "Devices: Framework Device Help",
     "area": "Devices",
-    "version": "0.1.0-dev.1",
+    "version": "0.1.0-dev.2",
     "author": "SenPi",
     "description": "Devices loaded by Framework: Nitro Devices can bring their own help text: a <name>.help.properties file next to the device supplies the help view's titles and descriptions for the help ids its panel uses. Bitwig's own texts always win.",
     "documentation": "readme"
   },
   "built_against": {
-    "bitwig_version": "6.1.7",
+    "bitwig_version": "6.1.4",
     "platform": "macos",
     "architecture": "universal"
   },

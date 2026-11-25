@@ -1,14 +1,14 @@
 package dev.sp.devices.frameworkinsert;
 
-import bitwig.obf.Qly; // a library root, as the device registry resolves paths against it
+import bitwig.obf.PRZ; // a library root, as the device registry resolves paths against it
 import bml.api.At;
 import bml.api.Bml;
 import bml.api.Hook;
-import com.bitwig.base.serial.file.Pv; // Bitwig's file format: reads a document's metadata
-import com.bitwig.flt.app.gEH; // the application; gEH.beI(UUID) is its package-UUID -> file lookup
+import com.bitwig.base.serial.file.lBQ; // Bitwig's file format: reads a document's metadata
+import com.bitwig.flt.app.TL; // the application; TL.cfM(UUID) is its package-UUID -> file lookup
 import com.bitwig.flt.file.format.FloatDocumentRelatedFileFormat; // the format devices are saved in
-import com.bitwig.flt.file.format.bNN; // reads values out of a document's metadata
-import com.bitwig.flt.packaging.core.SJF; // the native device registry
+import com.bitwig.flt.file.format.hgq; // reads values out of a document's metadata
+import com.bitwig.flt.packaging.core.Wkj; // the native device registry
 
 import java.io.File;
 import java.io.IOException;
@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
  * Patchbay's "Framework: Nitro Devices" registers a device under a registry path such as
  * "devices/Foo.bwdevice", and points project recall at the file it scanned. Every other lookup
  * of a package file by UUID (inserting a device from the API, loading a device's preset) goes
- * through the application's gEH.beI(UUID), which joins the registry path to Bitwig's own
+ * through the application's TL.cfM(UUID), which joins the registry path to Bitwig's own
  * Library folder, where the file is not. This mod replaces that join: when the stock file does
  * not exist, it returns the file with that UUID from the framework's configured folders.
  */
@@ -48,11 +48,11 @@ public final class InsertHooks {
     private static Map<UUID, File> files = Map.of();
     private static boolean scanned;
 
-    /** Replaces SJF.beI(uuid, root) inside gEH.beI(UUID): the registry path joined to Bitwig's Library. */
-    @Hook(id = "framework-device-insert-file", target = gEH.class, method = "beI(Ljava/util/UUID;)Ljava/io/File;",
-          at = At.REPLACE_CALL, callOwner = SJF.class, call = "beI(Ljava/util/UUID;LQly;)Ljava/io/File;", occurrence = 1)
-    public static File packageFile(UUID uuid, Qly root) {
-        File stock = SJF.beI(uuid, root);
+    /** Replaces Wkj.cfM(uuid, root) inside TL.cfM(UUID): the registry path joined to Bitwig's Library. */
+    @Hook(id = "framework-device-insert-file", target = TL.class, method = "cfM(Ljava/util/UUID;)Ljava/io/File;",
+          at = At.REPLACE_CALL, callOwner = Wkj.class, call = "cfM(Ljava/util/UUID;LPRZ;)Ljava/io/File;", occurrence = 1)
+    public static File packageFile(UUID uuid, PRZ root) {
+        File stock = Wkj.cfM(uuid, root);
         if (stock != null && stock.isFile()) return stock;
         try {
             File found = lookup(uuid, false);
@@ -163,7 +163,7 @@ public final class InsertHooks {
 
     @SuppressWarnings("unchecked")
     private static UUID readUuid(File file) throws Exception {
-        Pv format = FloatDocumentRelatedFileFormat.PJ3();
-        return bNN.Anf((Map<Object, Object>) format.Gef(file));
+        lBQ format = FloatDocumentRelatedFileFormat.iHb();
+        return hgq.hUR((Map<Object, Object>) format.MRY(file));
     }
 }
