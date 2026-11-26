@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "mod": {
+    "id": "bugfix-missing-device-placeholder",
+    "name": "Devices: Missing Device Placeholder",
+    "area": "Devices",
+    "version": "0.1.0-dev.1",
+    "author": "SenPi",
+    "description": "A project that uses a native device Bitwig can't find (a Framework: Nitro Devices device whose folder was removed, or whose UUID changed) opens with a pass-through \"Missing Device\" in its place, instead of crashing Bitwig.",
+    "documentation": "readme"
+  },
+  "built_against": {
+    "bitwig_version": "6.1.4",
+    "platform": "macos",
+    "architecture": "universal"
+  },
+  "resources": {
+    "data": {
+      "kind": "directory",
+      "path": "data",
+      "persistence": "created"
+    },
+    "readme": {
+      "kind": "file",
+      "path": "README.md",
+      "media_type": "text/markdown"
+    }
+  }
+}
